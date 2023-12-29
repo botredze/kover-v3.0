@@ -1,0 +1,45 @@
+.preloader__container {
+  display: flex;
+  //   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #ffc12e;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  padding: 200px 0 0 0;
+  top: 0;
+  left: 0;
+
+  > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    > img {
+      width: 168px;
+      height: 124px;
+    }
+  }
+}
+
+.preloader {
+  //   border: 8px solid #f3f3f3;
+  //   border: 8px solid #3498db;
+  //   border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  animation: spin 1s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

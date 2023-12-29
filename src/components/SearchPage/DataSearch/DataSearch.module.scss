@@ -1,0 +1,209 @@
+.alldata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 35px;
+  flex-wrap: wrap;
+  padding: 65px 0 100px 0;
+  margin: 0 !important;
+  position: static !important;
+  @media screen and (max-width: 420px) {
+    gap: 8px;
+  }
+  @media screen and (max-width: 382px) {
+    gap: 20px;
+  }
+  .everyData {
+    width: 177px;
+    position: relative;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    @media screen and (max-width: 382px) {
+      width: 200px;
+    }
+    .imgs {
+      position: relative;
+      width: 100%;
+      height: 110px;
+      > img {
+        width: 100%;
+        height: 110px;
+      }
+    }
+
+    .logo {
+      width: 40px !important;
+      height: 40px !important;
+      position: absolute;
+      left: 8px;
+      bottom: 8px;
+      border-radius: 4px;
+      background-color: #fff;
+      z-index: 5;
+    }
+
+    .types {
+      top: 8px;
+      left: 8px;
+      position: absolute;
+      border-radius: 4px;
+      background: #9b51e0;
+      padding: 4px 8px;
+      color: #fff;
+      font-family: Gilroy;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &__inner {
+      padding: 0 5px 5px;
+      h4 {
+        color: var(--Black, #222);
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 8px 0 0 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: 4px 0 0 0;
+
+        img {
+          width: 14px;
+          height: 14px;
+        }
+        span {
+          color: var(--Black, #222);
+          font-family: Gilroy;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        p {
+          color: var(--Gray-Text, #828282);
+          font-family: Gilroy;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .checkList {
+        justify-content: space-between !important;
+        > div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          width: 50%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  > li {
+    width: 177px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: relative;
+    @media screen and (max-width: 384px) {
+      width: 200px;
+    }
+
+    .types {
+      top: 8px;
+      left: 8px;
+      position: absolute;
+      border-radius: 4px;
+      background: #9b51e0;
+      padding: 4px 8px;
+      color: #fff;
+      font-family: Gilroy;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .imgFood {
+      width: 100%;
+      height: 110px;
+      border-radius: 8px 8px 0 0;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+    h6 {
+      color: var(--Black, #222);
+      font-family: Gilroy;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 49px;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      @media screen and (max-width: 384px) {
+        padding: 15px 5px;
+      }
+
+      p {
+        color: var(--Black, #222);
+        font-family: Gilroy;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      span {
+        color: #828282;
+        font-family: Gilroy;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    button {
+      color: var(--Black, #222);
+      font-family: Gilroy;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      border-radius: 0 0 8px 8px;
+      background: var(--Orange, #ffc12e);
+      width: 100%;
+      margin: 5px 0 0 0;
+    }
+  }
+}
